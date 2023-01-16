@@ -19,27 +19,41 @@
   }, 100);
 
 function handleMouseOver(id) {
-    let element = document.getElementById(id);
-    element.classList.add('selected')
+    let elements = document.querySelectorAll('.i' + id);
+    elements.forEach((elem) => {
+      elem.classList.add('selected')
+    })
 }
 
 function handleMouseOut(id) {
-  let element = document.getElementById(id);
-    element.classList.remove('selected')
+  let elements = document.querySelectorAll('.i' + id);
+  elements.forEach((elem) => {
+    elem.classList.remove('selected')
+  })
 }
 </script>
 
 <header>
       <div class=""> 
           <div class="small-nav-circle">
-              <span id="1" class="stroke"></span>
-              <span id="2" class="stroke"></span>
-              <span id="3" class="stroke"></span>
-              <span id="4" class="stroke"></span>
-              <span id="5" class="stroke"></span>
-              <span id="6" class="stroke"></span>
-              <span id="7" class="stroke"></span>
-              <span id="8" class="stroke"></span>
+              <span class="i1 stroke"></span>
+              <span class="i2 stroke"></span>
+              <span class="i3 stroke"></span>
+              <span class="i4 stroke"></span>
+              <span class="i5 stroke"></span>
+              <span class="i6 stroke"></span>
+              <span class="i7 stroke"></span>
+              <span class="i8 stroke"></span>
+          </div>
+          <div class="header-title__container">
+              <p class="i1 header-title">Kodexmafia</p>
+              <p class="i2 header-title">Cornelis</p>
+              <p class="i3 header-title">Navgul</p>
+              <p class="i4 header-title">Tomstacks</p>
+              <p class="i5 header-title">Seelisaughust</p>
+              <p class="i6 header-title">Edgelord</p>
+              <p class="i7 header-title">Paulusencornelis</p>
+              <p class="i8 header-title">Clit</p>
           </div>
     </div>
 </header>
@@ -47,14 +61,14 @@ function handleMouseOut(id) {
   <div class="navigation">
       <div class="grid-1 lg-grid justify-i-c"> 
           <div class="align-center nav-circle">
-              <a href="#info1" class="fade-in" on:mouseout={() => handleMouseOut(1)} on:mouseover={() => handleMouseOver(1)} on:focus={()=>{true}}><span>Project1</span></a>
-              <a href="#info2" class="fade-in" on:mouseout={() => handleMouseOut(2)} on:mouseover={() => handleMouseOver(2)} on:focus={()=>{true}}><span>Project2</span></a>
-              <a href="#info3" class="fade-in" on:mouseout={() => handleMouseOut(3)} on:mouseover={() => handleMouseOver(3)} on:focus={()=>{true}}><span>Project3</span></a>
-              <a href="#info4" class="fade-in" on:mouseout={() => handleMouseOut(4)} on:mouseover={() => handleMouseOver(4)} on:focus={()=>{true}}><span>Project4</span></a>
-              <a href="#info5" class="fade-in" on:mouseout={() => handleMouseOut(5)} on:mouseover={() => handleMouseOver(5)} on:focus={()=>{true}}><span>Project5</span></a>
-              <a href="#info6" class="fade-in" on:mouseout={() => handleMouseOut(6)} on:mouseover={() => handleMouseOver(6)} on:focus={()=>{true}}><span>Project6</span></a>
-              <a href="#info7" class="fade-in" on:mouseout={() => handleMouseOut(7)} on:mouseover={() => handleMouseOver(7)} on:focus={()=>{true}}><span>Project7</span></a>
-              <a href="#info8" class="fade-in" on:mouseout={() => handleMouseOut(8)} on:mouseover={() => handleMouseOver(8)} on:focus={()=>{true}}><span>Project8</span></a>
+              <a href="#info1" class="fade-in" on:mouseout={() => handleMouseOut(1)} on:mouseover={() => handleMouseOver(1)} on:focus={()=>{true}}><span>Kodexmafia</span></a>
+              <a href="#info2" class="fade-in" on:mouseout={() => handleMouseOut(2)} on:mouseover={() => handleMouseOver(2)} on:focus={()=>{true}}><span>Cornelis</span></a>
+              <a href="#info3" class="fade-in" on:mouseout={() => handleMouseOut(3)} on:mouseover={() => handleMouseOver(3)} on:focus={()=>{true}}><span>Navgul</span></a>
+              <a href="#info4" class="fade-in" on:mouseout={() => handleMouseOut(4)} on:mouseover={() => handleMouseOver(4)} on:focus={()=>{true}}><span>Tomstacks</span></a>
+              <a href="#info5" class="fade-in" on:mouseout={() => handleMouseOut(5)} on:mouseover={() => handleMouseOver(5)} on:focus={()=>{true}}><span>Seelisaughust</span></a>
+              <a href="#info6" class="fade-in" on:mouseout={() => handleMouseOut(6)} on:mouseover={() => handleMouseOver(6)} on:focus={()=>{true}}><span>Edgelord</span></a>
+              <a href="#info7" class="fade-in" on:mouseout={() => handleMouseOut(7)} on:mouseover={() => handleMouseOver(7)} on:focus={()=>{true}}><span>Paulusencornelis</span></a>
+              <a href="#info8" class="fade-in" on:mouseout={() => handleMouseOut(8)} on:mouseover={() => handleMouseOver(8)} on:focus={()=>{true}}><span>Clit</span></a>
           </div>
     </div>
   </div>
@@ -62,66 +76,67 @@ function handleMouseOut(id) {
     <div class="gallery__list">
         <div id="info1" class="gallery__project fade-in">
         <div class="gallery__project-title">
-          Project 1
+          Kodexmafia
         </div>
         <div class="gallery_project-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea amet reprehenderit cum ducimus accusantium sint modi magnam earum necessitatibus quis vel delectus, facere eaque consectetur dolorem dolorum placeat autem cupiditate!
+          Gathering of digital boobssexmaniacs based in Brussels, Belgium. Making trash digital art, mostly using Photoshop.
+          They have a specific client base, consisting of soundcloud trappers and producers.
         </div>
         </div>
         <div id="info2" class="gallery__project fade-in">
         <div class="gallery__project-title">
-          Project 1
+          Cornelis
         </div>
         <div class="gallery_project-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea amet reprehenderit cum ducimus accusantium sint modi magnam earum necessitatibus quis vel delectus, facere eaque consectetur dolorem dolorum placeat autem cupiditate!
+          The very best at making wonderfull music and not showing it to anyone. If you would like to hear some of his beatifull audio works you should beg him for a private link. Again his music really rules over all other music that exists.
         </div>
         </div>
         <div id="info3" class="gallery__project fade-in">
         <div class="gallery__project-title">
-          Project 1
+          Navgul
         </div>
         <div class="gallery_project-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea amet reprehenderit cum ducimus accusantium sint modi magnam earum necessitatibus quis vel delectus, facere eaque consectetur dolorem dolorum placeat autem cupiditate!
+          Not every music is good and neither is Navgul's music. Producing is just a way to chew on time for him. Sadly he stopped making music in 2021, realising he had better hopes of product descency in the visualarts.
         </div>
         </div>
         <div id="info4" class="gallery__project fade-in">
         <div class="gallery__project-title">
-          Project 1
+          Tomstacks
         </div>
         <div class="gallery_project-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea amet reprehenderit cum ducimus accusantium sint modi magnam earum necessitatibus quis vel delectus, facere eaque consectetur dolorem dolorum placeat autem cupiditate!
+          The most motivating person on earth. You see him ...  you are motivated. Besides slaying the architecture game and being international, he also is an underrated soundcloud vocalist.
         </div>
         </div>
         <div id="info5" class="gallery__project fade-in">
         <div class="gallery__project-title">
-          Project 1
+          Seelisaughust
         </div>
         <div class="gallery_project-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea amet reprehenderit cum ducimus accusantium sint modi magnam earum necessitatibus quis vel delectus, facere eaque consectetur dolorem dolorum placeat autem cupiditate!
+          Known as a quantity based writer, thinker, and playwriter. He informs his consumers about a combination of absurd and important views. He has a website, posts regularly on Medium and tries to keep up with crazy content on Instagram.
         </div>
         </div>
                 <div id="info6" class="gallery__project fade-in">
         <div class="gallery__project-title">
-          Project 1
+          Edgelord
         </div>
         <div class="gallery_project-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea amet reprehenderit cum ducimus accusantium sint modi magnam earum necessitatibus quis vel delectus, facere eaque consectetur dolorem dolorum placeat autem cupiditate!
+          Edgelord is an established soundcloud artist focusing on ...
         </div>
         </div>
                 <div id="info7" class="gallery__project fade-in">
         <div class="gallery__project-title">
-          Project 1
+          Paulus and Cornelis
         </div>
         <div class="gallery_project-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea amet reprehenderit cum ducimus accusantium sint modi magnam earum necessitatibus quis vel delectus, facere eaque consectetur dolorem dolorum placeat autem cupiditate!
+          Coming soon...
         </div>
         </div>
-                <div id="info8" class="gallery__project fade-in">
+        <div id="info8" class="gallery__project fade-in">
         <div class="gallery__project-title">
-          Project 1
+          C-lit
         </div>
         <div class="gallery_project-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea amet reprehenderit cum ducimus accusantium sint modi magnam earum necessitatibus quis vel delectus, facere eaque consectetur dolorem dolorum placeat autem cupiditate!
+          Also an established musician
         </div>
         </div>
   </div>
@@ -130,6 +145,7 @@ function handleMouseOut(id) {
 <style>
 
   .gallery__list {
+    color: black;
     margin-top: 45vh;
     display: grid;
     grid-template-columns: repeat(3, 300px);

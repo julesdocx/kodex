@@ -26,9 +26,9 @@ main {
 }
 
 body {
-  background-image: url("./assets/mountain.jpg");
+  /* background-image: url("./assets/mountain.jpg"); */
   background-size: cover;
-  /* background-color: #000000; */
+  background-color: white;
   /* background-position: repeat; */
   margin: 0;
   width: 105vw;
